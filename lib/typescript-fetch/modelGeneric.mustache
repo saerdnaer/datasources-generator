@@ -9,11 +9,6 @@ export interface {{classname}} {{#parent}}extends {{{parent}}} {{/parent}}{
 
 {{/additionalPropertiesType}}
 {{#vars}}
-    /**
-     * {{{description}}}
-     * @type {{=<% %>=}}{<%&datatype%>}<%={{ }}=%>
-     * @memberof {{classname}}
-     */
     {{name}}: {{#isEnum}}{{{datatypeWithEnum}}}{{/isEnum}}{{^isEnum}}{{{datatype}}}{{/isEnum}};
 {{/vars}}
 }{{#hasEnums}}
